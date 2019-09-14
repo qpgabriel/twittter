@@ -32,6 +32,10 @@ gem 'jbuilder', '~> 2.5'
 
 # Use Capistrano for deployment
 # gem 'capistrano-rails', group: :development
+gem 'bulma-rails', '~> 0.7.5'
+gem 'simple_form', '~> 4.1'
+gem 'gravatar_image_tag', '~> 1.2'
+gem 'devise', '~> 4.7', '>= 4.7.1'
 
 group :development, :test do
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console
@@ -39,6 +43,11 @@ group :development, :test do
   # Adds support for Capybara system testing and selenium driver
   gem 'capybara', '>= 2.15'
   gem 'selenium-webdriver'
+  gem 'spring'
+  gem 'spring-watcher-listen', ' ~> 2.0.0'
+  gem 'better_errors', '~> 2.5', '>= 2.5.1'
+  gem 'guard', '~> 2.15', '>= 2.15.1'  
+  gem 'guard-livereload', '~> 2.5', '>= 2.5.2', require: false
 end
 
 group :development do
